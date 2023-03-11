@@ -98,6 +98,16 @@ img {
     color: blue;
     opacity: 0.8;
 }
+.accordion:hover .fa-plus {
+    opacity: 1;
+    display: block;
+    font-size: 2rem;
+}
+.accordion:hover .accordion__item:has(.accordion__input:checked) .fa-plus {
+    display: block;
+    opacity: 1;
+    transform: rotate(45deg);
+}
 .accordion__input:checked ~ .accordion__item-img {
     height: 100%;
     opacity: 1;
@@ -113,17 +123,23 @@ img {
     display: none;
     opacity: 0;
 }
-.accordion:hover .fa-plus {
-    opacity: 1;
-    display: block;
-    font-size: 2rem;
-}
 .accordion__item:has(.accordion__input:checked) .fa-plus {
     display: none;
     opacity: 0;
 }
-.accordion:hover .accordion__item:has(.accordion__input:checked) .fa-plus {
-    display: block;
-    opacity: 1;
-    transform: rotate(45deg);
+/*-----support device without hover effect----*/
+@media (hover:none) {
+    .accordion {
+        color: inherit;
+    }
+    .accordion .fa-plus {
+        opacity: 1;
+        display: block;
+        font-size: 2rem;
+    }
+    .accordion .accordion__item:has(.accordion__input:checked) .fa-plus {
+        display: block;
+        opacity: 1;
+        transform: rotate(45deg);
+    }
 }
