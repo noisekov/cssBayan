@@ -8,6 +8,21 @@ html, body {
     height: 100%;
     background-color: #f5f5eb;
 }
+@media (min-width:320px) {
+    html,body {
+        font-size: 1rem;
+    }
+}
+@media (min-width:820px) {
+    html,body {
+        font-size: 1.2rem;
+    }
+}
+@media (min-width:1900px) {
+    html,body {
+        font-size: 1.4rem;
+    }
+}
 h1 {
     color: #000;
 }
@@ -71,6 +86,17 @@ img {
 }
 .accordion__item:hover {
     height: 100%;
+}
+.accordion__item:active {
+    opacity: 0.8;
+}
+.accordion__item:active .fa-plus {
+    color: blue;
+    opacity: 0.8;
+}
+.accordion__item:active .header  {
+    color: blue;
+    opacity: 0.8;
 }
 .accordion__input:checked ~ .accordion__item-img {
     height: 100%;
