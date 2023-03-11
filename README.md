@@ -9,4 +9,4 @@
 7. Initially, the first meme should be expanded
 
 ## Deploy
-https://noisekov.github.io/cssBayan/index.html
+https://noisekov.github.io/cssBayan/cssBayan/index.html
