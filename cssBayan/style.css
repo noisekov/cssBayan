@@ -1,6 +1,9 @@
 *, *::before, *::after {
     box-sizing: border-box;
 }
+* {
+    scroll-behavior: smooth;
+}
 html, body {
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-weight: 400;
